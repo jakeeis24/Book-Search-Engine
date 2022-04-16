@@ -17,6 +17,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 //done----------------
 
 - `index.js`: Export your typeDefs and resolvers.
+  -------HERE
 - `resolvers.js`: Define the query and mutation functionality to work with the Mongoose models.
 
   **Hint**: Use the functionality in the `user-controller.js` as a guide.
