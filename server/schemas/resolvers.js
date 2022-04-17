@@ -40,15 +40,12 @@ const resolvers = {
       return { token, user };
     },
     saveBook: async (parent, { user, book }, context) => {
-      try {
-        const updatedUser = await User.findOneAndUpdate(
+      if (context.user) {
+        return User.findOneAndUpdate(
           { _id: user._id },
           { $addToSet: { savedBooks: book } },
           { new: true, runValidators: true }
         );
-        return updatedUser;
-      } catch (err) {
-        throw Error("Could not save the book");
       }
     },
     removeBook: async (parent, { bookId }, context) => {
