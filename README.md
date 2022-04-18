@@ -28,6 +28,8 @@ Clone the repo and <code>npm i</code> in the command line.
 
 This app is used to search books using a google api and save them using the GraphQL API.
 
+![Screenshot of deployed application](./client/images/screenshot.jpg)
+
 # Contributing
 
 I am the sole contributor at this point.
